@@ -19,10 +19,6 @@ class Notify:
         
     def send(self):
         self.notify.send(self.message)
-        
-    def __call__(self, platform):
-        
-        self.plataform()
-        
+
         
         

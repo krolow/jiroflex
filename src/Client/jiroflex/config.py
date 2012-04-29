@@ -1,11 +1,11 @@
 CONFIG = {    
-    #what days should we check? 1 = Sunday...
+    #what days should we check? 1 = Monday...
     'days' : [
+        1,
         2,
         3,
         4,
         5,
-        6
     ],
    
     #between each time should we check? 8 = 8am 13 = 1pm
@@ -24,5 +24,7 @@ CONFIG = {
     'url' : 'http://127.0.0.1:5000',
     
     #your jira username
-    'username' : 'vkrolow'
+    'username' : 'vkrolow',
+    
+    'arduino' : True
 };

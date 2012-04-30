@@ -12,8 +12,15 @@ class Notify:
         self.notify = notify.Growl(self.message)
          
     def linux32(self):
+        self.linux()
+
+    def linux2(self):
+        self.linux()
+
+    def linux(self):
         from Linux import notify
-        
+        self.notify = notify.Pynotify(self.message)
+
     def win32(self):
         from Windows import notify
         

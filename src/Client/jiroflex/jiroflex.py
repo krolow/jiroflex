@@ -20,13 +20,10 @@ class Jiroflex:
         if (self.__can_notify()):
             status = self.rest.get_current_status()
             if (status == False):
-                notification.Notify("Don't forget to start one task at Jira:")
+                notification.Notify("Don't forget to start one task at Jira!")
                 self.lastNotify = time.time()
     
     def __can_notify(self):
-        print self.__check_interval()
-        print self.__check_date() 
-        print self.__check_hour()
         return self.__check_interval() and self.__check_date() and self.__check_hour()
         
     def __check_interval(self):

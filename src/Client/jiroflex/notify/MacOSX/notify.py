@@ -1,6 +1,5 @@
 import gntp.notifier
 
-
 class Growl:
     
     def __init__(self, message = None):
